@@ -1,0 +1,92 @@
+:root {
+  --textColor: rgb(0, 25, 244);
+  --button: rgb(35, 59, 245);
+  --white: rgb(252, 253, 255);
+  --green: rgb(46, 208, 159);
+  --lightBlue: #e7e9fe;
+  --lighterBlue: #dce1ff;
+  --mediumBlue: #c7cdfd;
+  --darkBlue: #a5b1fd;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #d4e6fe;
+}
+
+body > div {
+  background-color: var(--white);
+  width: 40%;
+  margin: 10% auto;
+  padding: 2rem 4rem;
+}
+
+h1 {
+  font-weight: 100;
+  color: var(--textColor);
+}
+
+input,
+textarea {
+  border-radius: 10px;
+  border: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  min-width: 100%;
+}
+
+::placeholder {
+  color: var(--textColor);
+}
+
+.nameInput {
+  background-color: var(--lightBlue);
+}
+
+.contactInput {
+  background-color: var(--lighterBlue);
+}
+
+span {
+  color: var(--green);
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 2fr 1.5fr;
+  gap: 1rem;
+  padding-top: 2rem;
+}
+
+.gridContainer :nth-child(7) {
+  grid-column: 1 / 3;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#addressInput {
+  grid-column: 1 / 3;
+  background-color: var(--mediumBlue);
+}
+
+#textInput {
+  grid-column: 1 / 3;
+  background-color: var(--darkBlue);
+}
+
+#submitBtn {
+  color: var(--white);
+  background-color: var(--button);
+  border: none;
+  border-radius: 50px;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  min-width: 20%;
+}
